@@ -9,21 +9,15 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(768, 456)
-        self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
+class Ui_Login(object):
+    def setupUi(self, Login):
+        Login.setObjectName("Login")
+        Login.resize(768, 456)
+        self.centralwidget = QtWidgets.QWidget(parent=Login)
         self.centralwidget.setObjectName("centralwidget")
         self.groupBox = QtWidgets.QGroupBox(parent=self.centralwidget)
         self.groupBox.setGeometry(QtCore.QRect(30, 30, 671, 331))
         self.groupBox.setObjectName("groupBox")
-        self.label = QtWidgets.QLabel(parent=self.groupBox)
-        self.label.setGeometry(QtCore.QRect(250, 20, 161, 31))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(parent=self.groupBox)
         self.label_2.setGeometry(QtCore.QRect(250, 60, 101, 31))
         font = QtGui.QFont()
@@ -77,26 +71,25 @@ class Ui_MainWindow(object):
         self.label_9.setPixmap(QtGui.QPixmap("D:\\ML_K23416\\retail_project\\uis\\../images/admin_avt.png"))
         self.label_9.setScaledContents(True)
         self.label_9.setObjectName("label_9")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
+        Login.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(parent=Login)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 768, 26))
         self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
+        Login.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(parent=Login)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        Login.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
-        self.pushButton_Exit.clicked.connect(MainWindow.close) # type: ignore
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(Login)
+        self.pushButton_Exit.clicked.connect(Login.close) # type: ignore
+        QtCore.QMetaObject.connectSlotsByName(Login)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, Login):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.groupBox.setTitle(_translate("MainWindow", "GroupBox"))
-        self.label.setText(_translate("MainWindow", "Login System:"))
-        self.label_2.setText(_translate("MainWindow", "Email:"))
-        self.label_3.setText(_translate("MainWindow", "Password:"))
-        self.checkBox.setText(_translate("MainWindow", "Save login information"))
-        self.pushButton_Login.setText(_translate("MainWindow", "Login"))
-        self.pushButton_Exit.setText(_translate("MainWindow", "Exit"))
+        Login.setWindowTitle(_translate("Login", "Login"))
+        self.groupBox.setTitle(_translate("Login", "Login System"))
+        self.label_2.setText(_translate("Login", "Email:"))
+        self.label_3.setText(_translate("Login", "Password:"))
+        self.checkBox.setText(_translate("Login", "Save login information"))
+        self.pushButton_Login.setText(_translate("Login", "Login"))
+        self.pushButton_Exit.setText(_translate("Login", "Exit"))

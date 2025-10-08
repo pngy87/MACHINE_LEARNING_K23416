@@ -1,10 +1,10 @@
 from PyQt6.QtWidgets import QMessageBox
 
 from retail_project.connectors.employee_connector import EmployeeConnector
-from retail_project.uis.LoginMainWindow import Ui_MainWindow
+from retail_project.uis.LoginMainWindow import Ui_Login
 
 
-class LoginMainWindowEx(Ui_MainWindow):
+class LoginMainWindowEx(Ui_Login):
     def __init__(self):
         pass
 
